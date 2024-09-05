@@ -7,7 +7,6 @@ import { BadRequestError } from "./lib/error";
 const app = new Hono();
 
 app.get("/", (c) => {
-  console.log("");
   return c.text("Hello Hono!");
 });
 
