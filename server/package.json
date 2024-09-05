@@ -1,14 +1,16 @@
 {
   "name": "my-app",
   "scripts": {
-    "dev": "tsx watch src/index.ts",
+    "dev": "tsx watch src/server.ts",
     "migrate": "npx prisma migrate dev"
   },
   "dependencies": {
     "@hono/node-server": "^1.12.2",
+    "@hono/zod-validator": "^0.2.2",
     "@prisma/client": "^5.19.1",
     "hono": "^4.5.11",
-    "neverthrow": "^7.1.0"
+    "neverthrow": "^7.1.0",
+    "zod": "^3.23.8"
   },
   "devDependencies": {
     "@types/node": "^20.11.17",
