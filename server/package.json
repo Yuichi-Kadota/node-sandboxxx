@@ -5,10 +5,13 @@
   },
   "dependencies": {
     "@hono/node-server": "^1.12.2",
-    "hono": "^4.5.11"
+    "@prisma/client": "^5.19.1",
+    "hono": "^4.5.11",
+    "neverthrow": "^7.1.0"
   },
   "devDependencies": {
     "@types/node": "^20.11.17",
+    "prisma": "^5.19.1",
     "tsx": "^4.7.1"
   }
 }
