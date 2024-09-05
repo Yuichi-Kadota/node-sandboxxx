@@ -1,8 +1,10 @@
-```
-npm install
-npm run dev
+```sh
+# set up
+$ yarn install
+$ docker compose up -d
+$ yarn dev
 ```
 
 ```
-open http://localhost:3000
+open http://localhost:3001
 ```
