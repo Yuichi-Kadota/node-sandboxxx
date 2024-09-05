@@ -6,7 +6,6 @@
   },
   "dependencies": {
     "@hono/node-server": "^1.12.2",
-    "@hono/zod-validator": "^0.2.2",
     "@prisma/client": "^5.19.1",
     "hono": "^4.5.11",
     "neverthrow": "^7.1.0",

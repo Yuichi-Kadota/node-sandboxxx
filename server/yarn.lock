@@ -127,11 +127,6 @@
   resolved "https://registry.yarnpkg.com/@hono/node-server/-/node-server-1.12.2.tgz#383d92e02f8fd75348b8246385de6c45f04b28d1"
   integrity sha512-xjzhqhSWUE/OhN0g3KCNVzNsQMlFUAL+/8GgPUr3TKcU7cvgZVBGswFofJ8WwGEHTqobzze1lDpGJl9ZNckDhA==
 
-"@hono/zod-validator@^0.2.2":
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/@hono/zod-validator/-/zod-validator-0.2.2.tgz#929a1c40aee5eac1ed9c84094d6d977e0b70187a"
-  integrity sha512-dSDxaPV70Py8wuIU2QNpoVEIOSzSXZ/6/B/h4xA7eOMz7+AarKTSGV8E6QwrdcCbBLkpqfJ4Q2TmBO0eP1tCBQ==
-
 "@prisma/client@^5.19.1":
   version "5.19.1"
   resolved "https://registry.yarnpkg.com/@prisma/client/-/client-5.19.1.tgz#d73f2b17b08628b6450c1c2dd20924d7a993aadf"
