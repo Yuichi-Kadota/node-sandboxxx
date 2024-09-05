@@ -1,28 +1,27 @@
-import { PrismaClient } from "@prisma/client";
-import { PrismaClientKnownRequestError } from "@prisma/client/runtime/library";
 import { ok, err, ResultAsync } from "neverthrow";
-
-const prisma = new PrismaClient();
+import prisma from "../infra/prisma";
+import { handlePrismaError } from "../infra/error";
+import { NotFoundError } from "../lib/error";
 
 export const fetchUser = async (id: string) => {
   return ResultAsync.fromPromise(
     prisma.user.findUnique({ where: { id } }),
     (e) => {
-      return e;
+      return handlePrismaError(e);
     }
   ).andThen((user) => {
-    return user ? ok(user) : err(new Error("User not found"));
+    return user ? ok(user) : err(new NotFoundError());
   });
 };
 
 export const fetchAllUsers = async () => {
   return ResultAsync.fromPromise(prisma.user.findMany(), (e) => {
-    return e;
+    return handlePrismaError(e);
   });
 };
 
 export const saveUser = async (data: { name: string; email: string }) => {
   return ResultAsync.fromPromise(prisma.user.create({ data }), (e) => {
-    return e;
+    return handlePrismaError(e);
   });
 };
