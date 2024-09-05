@@ -1,7 +1,8 @@
 {
   "name": "my-app",
   "scripts": {
-    "dev": "tsx watch src/index.ts"
+    "dev": "tsx watch src/index.ts",
+    "migrate": "npx prisma migrate dev"
   },
   "dependencies": {
     "@hono/node-server": "^1.12.2",
